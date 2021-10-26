@@ -51,7 +51,7 @@ var app = {
         ag.get()
         .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
-                var dados = db.collection("agendamentos").doc(doc.id);
+                var dados = db.collection("cadastro").doc(doc.id);
 
                 return dados.update({
                     nome: cnome,
